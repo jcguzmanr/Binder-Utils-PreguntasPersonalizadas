@@ -1,0 +1,8 @@
+# Dependencias para QA Personalizado Service
+# Usando solo librerías estándar de Python para máxima compatibilidad con AWS Lambda
+
+# AWS SDK (incluido en Lambda runtime)
+boto3>=1.26.0
+
+# Para desarrollo local (opcional)
+# python-dotenv>=1.0.0  # Descomenta si quieres usar .env files

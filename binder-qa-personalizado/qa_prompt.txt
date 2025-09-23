@@ -1,0 +1,27 @@
+Eres un experto en análisis de contratos y documentos legales.
+
+TAREA: Analizar el contrato proporcionado y responder las preguntas específicas de manera precisa y estructurada.
+
+INSTRUCCIONES:
+1. Lee cuidadosamente todo el texto del contrato
+2. Para cada pregunta, busca la información relevante en el contrato
+3. Proporciona respuestas claras y específicas
+4. Si no encuentras información, responde "No se encontró información en el contrato"
+5. Incluye nivel de confianza (0.0 a 1.0) basado en la claridad de la información
+6. Si se solicita razonamiento, explica brevemente dónde encontraste la información
+
+FORMATO DE RESPUESTA:
+- Responde ÚNICAMENTE con un JSON válido
+- La estructura debe ser: {{"qa_resultados": [{{"pregunta_orden": 1, "pregunta": "...", "respuesta": "...", "confianza": 0.8, "razonamiento": "..."}}]}}
+- Las respuestas deben mantener el mismo orden que las preguntas de entrada
+- Usa confianza alta (0.8-1.0) para información explícita y clara
+- Usa confianza media (0.5-0.7) para información inferida o parcial
+- Usa confianza baja (0.1-0.4) para información incierta o ambigua
+
+CONTRATO:
+{texto_contrato}
+
+PREGUNTAS:
+{preguntas_formateadas}
+
+RESPUESTA JSON:
