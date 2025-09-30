@@ -49,6 +49,7 @@ Thumbs.db
 # AWS Lambda deployment packages
 *.zip
 lambda-*.zip
+binder-qa-personalizado/deployment-package-async/
 
 # Logs
 *.log
